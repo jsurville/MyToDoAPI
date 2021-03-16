@@ -1,41 +1,21 @@
 ﻿using System.Collections.Generic;
-using MyToDoAPI.Models;
+using MyToDoApp.DAL;
+using System.Linq;
+using MyToApp.Models;
 
 namespace MyToDoAPI.Logic
 {
     public class PriceLogic
     {
-        private static List<Price> _priceList;
+        private static IEnumerable<Price> _priceList = new List<Price>();
+        private MyToDoContext db = new MyToDoContext();
 
-        public PriceLogic()
+        public IEnumerable<Price> GetAll()
         {
-            _priceList = new List<Price>();
-        }
-        public List<Price> GetAll()
-        {
-            var priceList = PopulatePriceList();
-
-            return priceList;
-        }
-
-        private static List<Price> PopulatePriceList()
-        {
-            var price1 = new Price()
-            {
-                Id = 1,
-                Value = "Value1"
-            };
-
-            var price2 = new Price()
-            {
-                Id = 2,
-                Value = "Value2"
-            };
-
-            _priceList.Add(price1);
-            _priceList.Add(price2);
+            
+            _priceList = db.Prices.ToList();
 
             return _priceList;
-        }
+        }        
     }
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyToDoAPI", "MyToDoAPI\MyToDoAPI.csproj", "{ECB04418-C89D-4A1B-A3CB-E62148BE087F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyToDo.Models", "MyToDo.Models\MyToDo.Models.csproj", "{3B936132-5E29-47CF-B288-AB3993899BAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyToDo.DAL", "MyToDo.DAL\MyToDo.DAL.csproj", "{9E1F87D8-2ECB-467A-B942-DAAFB6B338B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{ECB04418-C89D-4A1B-A3CB-E62148BE087F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECB04418-C89D-4A1B-A3CB-E62148BE087F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECB04418-C89D-4A1B-A3CB-E62148BE087F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B936132-5E29-47CF-B288-AB3993899BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B936132-5E29-47CF-B288-AB3993899BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B936132-5E29-47CF-B288-AB3993899BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B936132-5E29-47CF-B288-AB3993899BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1F87D8-2ECB-467A-B942-DAAFB6B338B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1F87D8-2ECB-467A-B942-DAAFB6B338B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1F87D8-2ECB-467A-B942-DAAFB6B338B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1F87D8-2ECB-467A-B942-DAAFB6B338B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Web;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using MyToDoAPI.Logic;
@@ -12,15 +10,15 @@ using MyToDoAPI.Resources;
 namespace MyToDoAPI.Controllers
 {
     [EnableCors(origins: "http://localhost:4200", headers: "Access-Control-Allow-Origin:*", methods: "*")]
-    public class ValuesController : ApiController
+    public class PricesController : ApiController
     {
         private PriceLogic _priceLogic;
 
-        public ValuesController()
+        public PricesController()
         {
             _priceLogic = new PriceLogic();
         }
-        // GET api/values
+        // GET api/prices
         public HttpResponseMessage Get(HttpRequestMessage request)
         {
             var prices = _priceLogic.GetAll();
@@ -29,23 +27,23 @@ namespace MyToDoAPI.Controllers
                 p => new PriceResource(p)).ToList()));
         }
 
-        // GET api/values/5
+        // GET api/prices/5
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/values
+        // POST api/prices
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/values/5
+        // PUT api/prices/5
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/values/5
+        // DELETE api/prices/5
         public void Delete(int id)
         {
         }
